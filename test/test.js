@@ -20,6 +20,10 @@ describe("Phrase", function() {
         let punctPalindrome=new Phrase("Madam, I'm Adam.");
         assert(punctPalindrome.palindrome())
       })
+      it("should return false for an empty string",function(){
+        let emptyString=new Phrase("");
+        assert(!emptyString.palindrome())
+      })
     })
 
     describe("#letters", function(){
